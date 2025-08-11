@@ -1,6 +1,3 @@
-Perfect 👍
-Here’s the **updated README.md** with a **Parcel Build Process Diagram** added so it’s more visual.
-
 ````markdown
 # 📦 Bundler & Parcel – Complete Guide
 
