@@ -1,0 +1,237 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy, arial, Helvetica Neue, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* logo on left, nav on right */
+  align-items: center;
+  padding: 0px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  height: 75px; /* adjust logo size */
+  width: auto;
+  cursor: pointer;
+  background: none;
+}
+
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* spacing between menu items */
+  font-size: 16px;
+  font-weight: 500;
+  align-items: center;
+}
+
+.nav-items ul li {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-items ul li:hover {
+  color: #0073e6; /* hover effect */
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Body container */
+.body {
+  /* max-width: 900px; */
+  /* margin: 40px auto; */
+  padding: 24px;
+  background: #fffdfa;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+}
+
+/* Search bar */
+.search-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-container input[type="text"] {
+  width: 60%;
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Filter and Sort buttons */
+.filter-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.filter-container button {
+  padding: 8px 20px;
+  background: #ffe066;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.filter-container button:hover {
+  background: #ffd43b;
+}
+
+/* Restaurant cards grid */
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start; /* Ensures cards start from the left */
+  align-items: flex-start;
+}
+
+/* Footer styles */
+.footer {
+  padding: 24px 0 16px 0;
+  background: #fffdfa;
+  border-top: 1px solid #eee;
+  text-align: center;
+  color: #888;
+  /* font-size: 1rem; */
+}
+
+.footer .social-media {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer .social-media a {
+  color: #888;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.footer .social-media a:hover {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.food-type {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.food-type span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid;
+  margin-right: 6px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.food-type span::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: currentColor;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+}
+
+.food-type.veg {
+  color: green;
+}
+
+.food-type.non-veg {
+  color: red;
+}
+
+/* Shimmer effect for loading state */
+.shimmer-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  width: 220px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.shimmer-img {
+  width: 100%;
+  height: 120px;
+  background: #ececec;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.shimmer-line {
+  background: #ececec;
+  border-radius: 4px;
+}
+
+.shimmer-dot {
+  width: 40px;
+  height: 16px;
+  background: #ececec;
+  border-radius: 8px;
+  margin: 12px auto 0;
+}
+
+.shimmer-animate {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-animate::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #ececec 0%, #f5f5f5 50%, #ececec 100%);
+  animation: shimmer 1.2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.header button {
+  padding: 8px 20px;
+  background: #ffe066;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.header button:hover {
+  background: #ffd43b;
+}

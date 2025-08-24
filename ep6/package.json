@@ -1,0 +1,22 @@
+{
+  "name": "react-ep3",
+  "version": "1.0.0",
+  "description": "react first app",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "author": "Rohit Soni",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "lucide-react": "^0.541.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist": [
+    "last 2 Chrome version"
+  ]
+}
